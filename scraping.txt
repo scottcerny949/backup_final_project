@@ -1,0 +1,37 @@
+
+Search for:
+data scientist in California
+
+Scrape the following:
+- Job Title
+- Company
+- Location
+- Job Type
+- Job Details
+- Full Job Description
+
+Nice to have:
+- Benefits -- not a consistently displayed field
+- Date Posted
+- Salary - rarely shown and typically in a random place inside job description when shown
+- Company number of Stars (rating)
+- Whether or not it lists Remote after the location
+
+
+
+https://www.indeed.com/jobs?q=data%20analyst&l=California&start=0
+https://www.indeed.com/jobs?q=data%20analyst&l=California&start=10
+https://www.indeed.com/jobs?q=data%20analyst&l=California&start=20
+etc.
+
+
+<span title="Quality Data Analyst (Excel Expert)">Quality Data Analyst (Excel Expert)</span>
+
+<td class="resultContent">
+   <div class="heading4 color-text-primary singleLineTitle tapItem-gutter">
+      <h2 class="jobTitle jobTitle-color-purple">
+         <span title="Quality Data Analyst (Excel Expert)">Quality Data Analyst (Excel Expert)</span>
+      </h2>
+   </div>
+
+<div class="heading6 company_location tapItem-gutter"><pre><span class="companyName">Foundation for Medical Care of Tulare &amp; Kings...</span><div class="companyLocation">Visalia, CA<!-- --> <!-- -->93277</div></pre></div><div class="heading6 tapItem-gutter metadataContainer"><div class="metadata salary-snippet-container"><span aria-label="From $16 an hour" class="salary-snippet">From $16 an hour</span></div></div><div class="heading6 error-text tapItem-gutter"></div></td>
