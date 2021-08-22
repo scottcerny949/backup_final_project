@@ -35,3 +35,27 @@ etc.
    </div>
 
 <div class="heading6 company_location tapItem-gutter"><pre><span class="companyName">Foundation for Medical Care of Tulare &amp; Kings...</span><div class="companyLocation">Visalia, CA<!-- --> <!-- -->93277</div></pre></div><div class="heading6 tapItem-gutter metadataContainer"><div class="metadata salary-snippet-container"><span aria-label="From $16 an hour" class="salary-snippet">From $16 an hour</span></div></div><div class="heading6 error-text tapItem-gutter"></div></td>
+
+
+
+
+for h2 in div.find_all(name='h2', attrs={'class':'jobTitle jobTitle-color-purple'}):
+
+for h2 in div.find_all(name='h2', attrs={'class':'jobTitle jobTitle-color-purple jobTitle-newJob'}):
+
+
+
+def extract_job_title_from_result(soup): 
+    jobs = []
+    for td in soup.find_all(name='td', attrs={'class':'resultContent'}):
+        for div in td.find_all(name='div', attrs={'class':'heading4 color-text-primary singleLineTitle tapItem-gutter'}):
+            for h2 in div.find_all(name='h2', attrs={'class':'jobTitle jobTitle-color-purple'}):
+                for span in h2.find_all(name='span'):
+                    try:
+                        jobs.append(span['title'])
+                    except:
+                        jobs.append("Nothing_found")
+    return(jobs)
+extract_job_title_from_result(soup)
+
+# for h2 in div.find_all(name='h2', attrs={'class':'jobTitle jobTitle-color-purple jobTitle-newJob'}):
